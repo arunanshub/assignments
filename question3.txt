@@ -1,0 +1,7 @@
+A. Reverse-i-search in a Linux terminal allows you to search through command history by typing a partial command and pressing Ctrl+R.
+
+B. Use the command: ls -a.
+
+C. I am very comfortable using Linux-based OS like Ubuntu, Arch Linux, Fedora etc. My daily driver OS is Manjaro KDE.
+
+D. Yes, I have set up web applications on servers before, using services like Caddy2. I am also comfortable with Nginx.
