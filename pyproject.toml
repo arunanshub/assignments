@@ -1,0 +1,71 @@
+[tool.poetry]
+name = "assignments"
+version = "0.1.0"
+description = ""
+authors = ["Arunanshu Biswas <mydellpc07@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+beautifulsoup4 = "^4.12.2"
+requests = "^2.31.0"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.5.1"
+types-requests = "^2.31.0.2"
+types-beautifulsoup4 = "^4.12.0.6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+# linting and Development
+[tool.black]
+line-length = 79
+target-verson = "py38"
+
+[tool.mypy]
+python_version = "3.10"
+warn_unused_configs = true
+warn_unused_ignores = true
+
+show_error_codes = true
+pretty = true
+
+warn_redundant_casts = true
+warn_return_any = true
+no_implicit_optional = true
+check_untyped_defs = true
+disallow_untyped_defs = true
+disallow_any_unimported = true
+
+[tool.ruff]
+line-length = 79
+target-version = "py38"
+exclude = [
+  "docs",
+  "tests",
+]
+ignore = ["ANN101", "ANN102", "ANN401", "B024"]
+select = [
+  "ANN",
+  "B",
+  "E",
+  "F",
+  "W",
+  "I",
+  "S",
+  "RET",
+  "EM",
+  "UP",
+  "C90",
+  "TCH",
+  "SIM",
+  "PIE",
+  "TID",
+]
+
+[tool.ruff.isort]
+required-imports = ["from __future__ import annotations"]
+combine-as-imports = true
+force-wrap-aliases = true
