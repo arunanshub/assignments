@@ -1,0 +1,45 @@
+1. jQuery
+  Regex Pattern: \$\(\s*["\'](?:document|window)\s*["\']\)\.ready|\$\(\s*["\'](?:document|window)\s*["\']\)\.load|\$\(\s*["\'](?:#|\.|)[\w-]+\s*["\']\)\.|\$\.\w+
+  Regex Pattern: jquery(\.min)?\.js
+  Sample Website: https://www.margotpriolet.com/
+
+2. React.js
+  Regex Pattern: data-reactroot=
+  Regex Pattern: react(-dom)?(\.min)?\.js
+  Sample Website: https://www.paypal.com/
+
+3. WooCommerce
+  Regex Pattern: woocommerce(\.min)?\.(css|js)
+  Sample Website: https://allblackshop.com
+
+4. Bootstrap
+  Regex Pattern: class="[^"]*\b(container|row|col-[a-z]{1,2}-\d{1,2})\b
+  Regex Pattern: bootstrap(?:\.min)?\.css
+  Sample Website: https://getbootstrap.com
+
+5. Shopify
+  Regex Pattern: <meta name="shopify-checkout-api-token"
+  Regex Pattern: \.myshopify\.com
+  Sample Website: https://www.naja.co
+
+6. Next.js
+  Regex Pattern: id="__next"
+  Regex Pattern: NEXT_DATA
+  Sample Website: https://vercel.com
+
+7. Materialize CSS
+  Regex Pattern: class="[^"]*\b(?:materialize|\.materialize)\b[^"]*"
+  Sample Website: https://www.android-kiosk.com
+
+8. PHP
+  Regex Pattern: r'<\?php|\b(php|mysqli|pdo)\b'
+  Sample Website: https://en.wikipedia.org
+
+9. Python
+  No reliable way to find out without analyzing headers and scripts. Moreover,
+  Python may be used as a server-side language, hence detection is tricky.
+  Sample Website: https://python.org
+
+10.Google Maps
+  Regex Pattern: AIza[0-9A-Za-z-_]{35}
+  Sample Website: https://www.google.com/maps
